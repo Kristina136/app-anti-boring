@@ -17,9 +17,7 @@ const[image, setImage] = useState("");
 
 
 
-useEffect(()=>{
-    getAdvice()
-  }, []);
+
  
   const getAdvice = async ()=>{
     const res = await fetch("http://www.boredapi.com/api/activity/");
@@ -77,7 +75,9 @@ const showImg=(resReseived)=>{
 }
 
 
-
+useEffect(()=>{
+  getAdvice();
+}, []);
  
 
   return (
