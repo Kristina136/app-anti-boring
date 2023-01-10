@@ -1,15 +1,27 @@
 .App {
   text-align: center;
-  margin-top: 250px;
-}
+  margin: 250px auto 0px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 800px;
 
+}
+.container{
+  width: 800px;
+}
 body{
   background-image: url(https://img.freepik.com/free-photo/courage-man-jump-through-the-gap-between-hill-business-concept-idea_1323-262.jpg?w=1380&t=st=1673267432~exp=1673268032~hmac=985dbed8996dd285e3b0721e8bcdf39500d214f3c0659b58ac2b2453b8409ca8);
 background-size: cover;
 background-repeat: no-repeat;
+height: 100vh;
+background-position: center;
+}
+img{
+  width:800px;
+  height: 100%;
 }
 h2{
-
   font-size: 40px;
 }
 button{
@@ -20,3 +32,41 @@ button{
   background-color: black;
   color: yellow;
 }
+
+
+
+@media all and (max-width:800px){
+  html{
+    overflow-x: hidden;
+  }
+  body{
+    background-image: url(https://img.freepik.com/free-photo/happy-children-isolated-on-blue-studio-background-looks-happy-cheerful-sincere-copyspace-childhood-education-emotions-concept_155003-35416.jpg?w=740&t=st=1673343676~exp=1673344276~hmac=d54b97155ced3a0408fd08a3a8b00aa711d4b7d8a1557a73883522295e7ddf0b);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow-x: hidden;
+  }
+  img{
+    width:100vw;
+  }
+  h2{
+    font-size: 25px;
+    background-color: rgb(200, 240, 90);
+    padding: 5px;
+  }
+  .App {
+    width: 100vw;
+  }
+  .container{
+    width: 300px !important;
+  }
+  button{
+    font-size: 40px;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 25px;
+    background-color: black;
+    color: yellow;
+  }
+}
+
