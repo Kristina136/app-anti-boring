@@ -1,38 +1,22 @@
 .App {
   text-align: center;
+  margin-top: 250px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-image: url(https://img.freepik.com/free-photo/courage-man-jump-through-the-gap-between-hill-business-concept-idea_1323-262.jpg?w=1380&t=st=1673267432~exp=1673268032~hmac=985dbed8996dd285e3b0721e8bcdf39500d214f3c0659b58ac2b2453b8409ca8);
+background-size: cover;
+background-repeat: no-repeat;
 }
+h2{
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  font-size: 40px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button{
+  font-size: 50px;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 25px;
+  background-color: black;
+  color: yellow;
 }
