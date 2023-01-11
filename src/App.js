@@ -50,7 +50,7 @@ useEffect(()=>{
      <h2>{advice}</h2>
      </div>
    <img src={image} alt="activity"/>
-     <button onClick={finalSearch}>Get activity</button>
+     <button onClick={getActivity}>Get activity</button>
      
     </div>
   );
