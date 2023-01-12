@@ -33,7 +33,8 @@ async function getActivity (){
  }
  
 useEffect(()=>{
-  
+  function getActivity(){
+  }
   getActivity();
 }, []);
 
