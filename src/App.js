@@ -13,20 +13,14 @@ const [advice, setAdvice] = useState("");
 /* State for img*/
 const[image, setImage] = useState(data);
 
-
-useEffect(()=>{
-  async function getActivity (){
+async function getActivity (){
     const res = await fetch("http://www.boredapi.com/api/activity/");
     const result = await res.json();
     const resReseived = result.type;
-    console.log(result)
+    console.log(result);
     setAdvice(result.activity);
    showImg(resReseived);
-  
   };
-  getActivity();
-}, []);
-
 
 /* Conditions for show img*/
  const showImg=(resReseived)=>{
@@ -38,6 +32,13 @@ useEffect(()=>{
   
  }
  
+useEffect(()=>{
+  
+  getActivity();
+}, []);
+
+
+
 
 
 
