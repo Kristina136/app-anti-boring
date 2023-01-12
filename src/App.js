@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from 'react';
 import './App.css';
 import { data } from './data';
@@ -11,7 +12,7 @@ function App() {
 
 const [advice, setAdvice] = useState("");
 /* State for img*/
-const[image, setImage] = useState(data);
+const[image, setImage] = useState("https://img.freepik.com/free-vector/tired-man-sleeping-on-laptop-keyboard-flat-illustration_74855-15549.jpg?size=626&ext=jpg&ga=GA1.1.285516938.1673547099&semt=sph");
 
 async function getActivity (){
     const res = await fetch("http://www.boredapi.com/api/activity/");
